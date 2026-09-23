@@ -1,0 +1,13 @@
+bin/
+obj/
+test-output/
+local-references/
+installer/build/
+installer/candidate/
+*.pfx
+*.p12
+*.key
+*.pem
+*.log
+*.dat
+.env*

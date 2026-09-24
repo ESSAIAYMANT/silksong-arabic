@@ -14,7 +14,7 @@ The installer detects Steam libraries or accepts a manually selected folder, ver
 
 ## Verification
 
-The existing local RC3 candidate passed **46 engine cases**, including one isolated real-payload file-copy cycle. The public source-only test runner executes **45 synthetic cases** without game binaries. These are filesystem/transaction tests, not GUI or gameplay acceptance. Native RC3 interface testing, clean-machine gameplay and trusted signing remain pending. An earlier unsigned candidate was blocked by Windows Smart App Control; do not disable security protections to run it.
+The existing local RC3 candidate passed **46 engine cases**, including one isolated real-payload file-copy cycle. The public source-only test runner executes **45 synthetic cases** without game binaries. A GitHub Actions workflow runs these source tests; its current result is visible in the Actions tab. These are filesystem/transaction tests, not GUI or gameplay acceptance. Native RC3 interface testing, clean-machine gameplay and trusted signing remain pending. An earlier unsigned candidate was blocked by Windows Smart App Control; do not disable security protections to run it.
 
 ## Repository contents
 
@@ -28,7 +28,7 @@ Game executables, game assemblies, saves, credentials and diagnostic captures ar
 
 ## Licensing and third-party material
 
-Read [LICENSE-STATUS.md](LICENSE-STATUS.md) and [THIRD-PARTY.md](THIRD-PARTY.md). Original code is published for inspection; an OSI license has not yet been authorized by the maintainer. Do not infer an open-source license from public visibility. Noto retains OFL. Game narrative, names and trademarks remain with their respective rights holders; no ownership of Team Cherry's work is claimed.
+Read [LICENSE-STATUS.md](LICENSE-STATUS.md) and [THIRD-PARTY.md](THIRD-PARTY.md). Original installer/plugin code, build scripts and icon assets are licensed under MIT, with the scope described in LICENSE-STATUS.md. Noto retains OFL. Game narrative, names and trademarks remain with their respective rights holders; no ownership of Team Cherry's work is claimed.
 
 ## Code signing policy
 

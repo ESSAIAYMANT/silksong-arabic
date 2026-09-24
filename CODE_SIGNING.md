@@ -2,7 +2,7 @@
 
 ## Current status
 
-**Not approved by SignPath Foundation; no trusted public signature yet.** A free-code-signing eligibility request is being prepared. The source preview is not represented as meeting every eligibility condition. See LICENSE-STATUS.md and BUILD.md for unresolved licensing and full-payload rebuild requirements.
+**Not approved by SignPath Foundation; no trusted public signature yet.** A free-code-signing eligibility request is being prepared. The source preview is not represented as meeting every eligibility condition. See LICENSE-STATUS.md and BUILD.md for the original-code MIT grant, remaining content/provenance scope and full-payload rebuild requirements.
 
 Do not bypass Windows Smart App Control, antivirus or signature warnings. An unsigned local candidate is not a production release. Source tests passing does not mean its GUI or gameplay has passed acceptance.
 

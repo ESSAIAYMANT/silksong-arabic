@@ -1,9 +1,7 @@
-# Licensing status — maintainer decision pending
+# License scope
 
-This source preview does not yet grant an open-source license for original project code. Public visibility is for inspection and review; it is not a claim that the project currently satisfies SignPath Foundation's OSI-license condition.
+Original installer code (`installer/src/`), runtime plugin source (`plugin/`), original build and test scripts, and original installer icon assets are licensed under the MIT License in [LICENSE](LICENSE), as authorized by Ayman Essai on 2026-09-24. MIT permits use, modification and redistribution, including commercial use, with its notice retained.
 
-Proposed next step: the maintainer may license original installer/runtime code, original build scripts and original icon assets under MIT. That decision must be explicit before a LICENSE file is added. It must not relicense third-party libraries, font files, game assets, game narrative, names or trademarks.
+This license does not relicense third-party libraries or fonts, the game or its assets, narrative, names or trademarks. `fonts/` retains its included SIL Open Font License 1.1. See THIRD-PARTY.md.
 
-The Arabic dictionaries are a fan translation of the game's narrative and interface. No rights in the underlying game are claimed or granted. Their distribution/licensing scope and the font-bundle provenance must be settled before representing the full game-mod package as entirely open source.
-
-The font in `fonts/` retains its included SIL Open Font License 1.1. See THIRD-PARTY.md for the separate licenses of dependencies used by the local candidate.
+The Arabic dictionaries are a fan translation of the game's narrative and interface and are not included in this original-code MIT grant. No ownership or license in Team Cherry's underlying work is claimed. Full-package signing eligibility remains subject to the translated-content scope, independent font-asset provenance, verified builds and the provider's assessment.

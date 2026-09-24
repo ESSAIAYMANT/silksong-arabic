@@ -1,0 +1,12 @@
+{
+  "installer_sha256": "REPLACE_AFTER_SIGNING",
+  "engine_tests_passed": 0,
+  "smart_app_control_launch_ok": false,
+  "gui_install_ok": false,
+  "gui_repair_ok": false,
+  "gui_remove_ok": false,
+  "supported_clean_gameplay_ok": false,
+  "payload_binary_signatures_ok": false,
+  "tester_notes": "Fill only from observed results for this exact signed binary. Do not change these fields just to pass the release gate.",
+  "gui_disable_enable_ok": false
+}

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>SilksongArabic</AssemblyName>
+    <GameManaged Condition="'$(GameManaged)' == ''">$(MSBuildThisFileDirectory)..\local-references\game</GameManaged>
+    <BepCore Condition="'$(BepCore)' == ''">$(MSBuildThisFileDirectory)..\local-references\bepinex</BepCore>
+  </PropertyGroup>
+  <Target Name="CheckLocalReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(GameManaged)/Assembly-CSharp.dll')" Text="Set GameManaged to your legally owned matching game's Managed directory." />
+    <Error Condition="!Exists('$(BepCore)/BepInEx.dll')" Text="Set BepCore to the BepInEx core directory." />
+  </Target>
+  <ItemGroup>
+    <Reference Include="$(GameManaged)\Unity*.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="$(GameManaged)\TeamCherry.*.dll" Private="false" />
+    <Reference Include="$(BepCore)\BepInEx.dll" Private="false" />
+    <Reference Include="$(BepCore)\0Harmony.dll" Private="false" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,47 @@
+PASS clean install, idempotence, remove, keep saves
+PASS restore earlier manual Arabic translation
+PASS retain existing matching loader
+PASS different loader rejected without changing it
+PASS wrong game binary rejected
+PASS running game rejected
+PASS injected mid-install failure rolls back exact originals
+PASS modified installed file prevents destructive uninstall
+PASS other mods retain shared loader
+PASS tampered journal traversal rejected
+PASS missing backup blocks uninstall before any mutation
+PASS game update still permits uninstall
+PASS unfinished installation journal can be recovered
+PASS absolute, ADS and dot path rejection
+PASS Windows case-insensitive game path restores correctly
+PASS compatible custom Doorstop config preserved
+PASS tampered backup hash rejects whole removal
+PASS concurrent installer lock rejects mutation
+PASS review previews changes without writing state
+PASS missing owned files repaired while original backup survives
+PASS repair refuses changed files before writing missing ones
+PASS repair failure rolls back only newly restored files
+PASS repair refuses missing files owned by earlier manual install
+PASS review and repair honor running game guard
+PASS low disk space rejected before state creation
+PASS updated game review permits removal but not repair
+PASS directory collision blocks removal before any file changes
+PASS progress reports completed files and final total
+PASS support report redacts game and profile across case and separators
+PASS repeated toggle cycles preserve translation saves other mods and journal
+PASS recognized manual translation can toggle without being claimed
+PASS uninstall while disabled removes parked copy and restores earlier DLL
+PASS uninstall respects identical preexisting DLL after disabling
+PASS disable works after update but enable requires supported build
+PASS running game blocks both toggle directions
+PASS tampered parked DLL blocks enabling and removal without mutation
+PASS duplicate active and parked DLLs are preserved on conflict
+PASS interrupted disable before move can safely restore active state
+PASS interrupted disable after move is recognized as disabled
+PASS interrupted enable after move can complete idempotently
+PASS legacy manual disable marker is not silently mixed
+PASS incomplete runtime blocks enable but still allows uninstall
+PASS wrong-root toggle journal blocks all mutation
+PASS toggle shares exclusive operation lock
+PASS unknown manual plugin is never disabled
+PASS real embedded package install toggle repair remove in isolated game file copy
+TOTAL PASS: 46
